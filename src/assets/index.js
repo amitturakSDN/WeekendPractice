@@ -1,2 +1,44 @@
 export { default as homeIcon } from '@/assets/ic_home/ic_home.png';
 export { default as settingsIcon } from '@/assets/ic_settings/ic_settings.png';
+export { default as mail } from '@/assets/images/login/mail.png';
+export { default as lock } from '@/assets/images/login/lock.png';
+export { default as left } from '@/assets/images/login/left.png';
+export { default as appicon } from '@/assets/appicon.png';
+export { default as login } from '@/assets/images/login/login.png';
+export { default as logo } from '@/assets/images/login/logo.png';
+export { default as search } from '@/assets/ic_search/Search.png';
+export { default as homeBack } from '@/assets/home/home_bg.png';
+export { default as filter } from '@/assets/home/filter.png';
+export { default as check } from '@/assets/home/check.png';
+export { default as uncheck } from '@/assets/home/uncheck.png';
+export { default as home } from '@/assets/tabBar/home.png';
+export { default as calendar } from '@/assets/home/Calendar.png';
+export { default as phone } from '@/assets/home/phone.png';
+export { default as loc_pin } from '@/assets/home/loc_pin.png';
+export { default as greenTick } from '@/assets/home/greenTick.png';
+
+export { default as schedule } from '@/assets/tabBar/schedule.png';
+export { default as chat } from '@/assets/tabBar/chat.png';
+export { default as settings } from '@/assets/tabBar/settings.png';
+export { default as backArrow } from '@/assets/ic_back/backArrow.png';
+export { default as map } from './map/dommyMap.jpeg';
+export { default as card } from './card/card.png';
+export { default as case } from './case/case.png';
+export { default as down } from './down/down.png';
+export { default as up } from './up/up.png';
+export { default as call } from './call/call.png';
+export { default as chatIcon } from './chat/chat.png';
+export { default as send } from './send/Send_fill.png';
+export { default as sort } from './sort/sort.png';
+
+export { default as radio_check } from '@/assets/radioButton/radio_check.png';
+export { default as radio_uncheck } from '@/assets/radioButton/radio_uncheck.png';
+export { default as info } from './info/info.png';
+export { default as concern } from './concern/concern.png';
+
+export { default as estar } from './eStar/eStar.png';
+export { default as fStar } from './fStar/fStar.png';
+export { default as user } from './user/user.png';
+export { default as paperclip } from './paperclip/paperclip.png';
+export { default as bell } from './bell.png';
+export { default as addressImage } from './address.png';

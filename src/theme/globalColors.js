@@ -1,0 +1,18 @@
+export const globalColors = {
+  primaryTheme: '#EC008C',
+  white: '#ffffff',
+  black: '#000000',
+  grey: '#898186',
+  blacktext: '#000000',
+  shadedPrimary: '#C70679',
+  completed: '#007E2F',
+  lightGrey: '#898186',
+  lightGreen: '#DCEFE4',
+  darkGreen: '#007E2F',
+  lightPrimary: '#EC008C2B',
+  yellow: '#FFB520',
+  whiteGrey: '#EEEEEE',
+  primaryTheme: '#EC008C',
+  textGrey: '#898186',
+  red: 'red',
+};

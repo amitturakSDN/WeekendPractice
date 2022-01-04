@@ -10,6 +10,7 @@ import { theme } from '@/theme';
 export function RootNavigator() {
   const user = useSelector(getUser);
   const scheme = useColorScheme();
+  
 
   return (
     <NavigationContainer theme={theme[scheme]}>

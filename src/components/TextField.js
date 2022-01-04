@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
-import { spacing } from '@/theme';
+import { StyleSheet, View, Image } from 'react-native';
+import { TextInput } from 'react-native-paper';
+import { spacing, globalColors } from '@/theme';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
   container: {
@@ -20,60 +21,82 @@ const styles = StyleSheet.create({
     top: 0,
     left: spacing.xs,
   },
+  icons: {
+    height: RFValue(15),
+    width: RFValue(15),
+    marginTop: RFValue(3),
+  },
+  inputStyle: {
+    height: RFValue(50),
+    width: '100%',
+    borderRadius: RFValue(10),
+    marginVertical: RFValue(10),
+    borderWidth: 0,
+    borderTopRightRadius: RFValue(10),
+    borderTopLeftRadius: RFValue(10),
+    backgroundColor: globalColors.whiteGrey,
+  },
 });
 
-export function TextField({ onBlur, onFocus, placeholder, value, ...rest }) {
-  const animation = useSharedValue(0);
-  const [labelWidth, setLabelWidth] = useState(0);
-
-  const handleFocus = () => {
-    if (!value) {
-      animation.value = withTiming(1);
-    }
-
-    onFocus?.();
-  };
-
-  const handleBlur = () => {
-    if (!value) {
-      animation.value = withTiming(0);
-    }
-
-    onBlur?.();
-  };
-
-  const measureLabelWidth = ({ nativeEvent }) => {
-    setLabelWidth(nativeEvent.layout.width);
-  };
-
-  const animatedStyle = useAnimatedStyle(() => ({
-    opacity: 1 - animation.value * 0.25,
-    transform: [
-      { scale: 1 - animation.value * 0.3 },
-      { translateX: animation.value * (-spacing.s - labelWidth * 0.15) },
-      { translateY: (1 - animation.value) * spacing.m },
-    ],
-  }));
-
+export function TextField({
+  label,
+  value,
+  onChangeText,
+  image,
+  icon,
+  secure = false,
+  keyboardType = 'default',
+  customStyle,
+  multiline = false,
+  disabled = false,
+  autoCapitalize,
+  maxLength,
+  onSubmitEditing,
+  forwardedRef,
+  ...rest
+}) {
   return (
-    <View style={styles.container}>
-      <Animated.Text onLayout={measureLabelWidth} style={[styles.label, animatedStyle]}>
-        {placeholder}
-      </Animated.Text>
-      <TextInput
-        onBlur={handleBlur}
-        onFocus={handleFocus}
-        style={styles.input}
-        value={value}
-        {...rest}
-      />
-    </View>
+    <TextInput
+      maxLength={maxLength}
+      onSubmitEditing={onSubmitEditing}
+      ref={forwardedRef}
+      label={label}
+      value={value}
+      placeholder={''}
+      underlineColor={'transparent'}
+      onChangeText={onChangeText}
+      selectionColor={'#000'}
+      autoCapitalize={autoCapitalize}
+      theme={{
+        colors: {
+          primary: globalColors.primaryTheme,
+          text: globalColors.blacktext,
+          placeholder: globalColors.black,
+          disabled: globalColors.black,
+        },
+      }}
+      secureTextEntry={secure}
+      disabled={disabled}
+      multiline={multiline}
+      keyboardType={keyboardType}
+      numberOfLines={multiline ? 4 : 1}
+      left={
+        icon ? (
+          <TextInput.Icon
+            name={() => {
+              return <Image style={styles.icons} source={image} resizeMode={'contain'} />;
+            }}
+          />
+        ) : null
+      }
+      style={[styles.inputStyle, customStyle]}
+    />
   );
 }
 
 TextField.propTypes = {
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
-  placeholder: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
   value: PropTypes.string,
 };

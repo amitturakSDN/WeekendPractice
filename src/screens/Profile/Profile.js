@@ -1,4 +1,5 @@
 import { useTheme } from '@react-navigation/native';
+import { NAVIGATION } from '@/constants';
 import React from 'react';
 import { Text, View } from 'react-native';
 import { useDispatch } from 'react-redux';
@@ -8,12 +9,13 @@ import { strings } from '@/localization';
 import { styles } from '@/screens/Profile/Profile.styles';
 import { typography } from '@/theme';
 
-export function Profile() {
+export function Profile(props) {
   const { colors } = useTheme();
   const dispatch = useDispatch();
-
+  const { navigation } = props;
   const logoutUser = () => {
-    dispatch(logout());
+    // dispatch(logout());
+    navigation.navigate(NAVIGATION.login)
   };
 
   return (
