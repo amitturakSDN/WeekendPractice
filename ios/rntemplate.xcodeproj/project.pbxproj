@@ -601,7 +601,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser;
 				PRODUCT_NAME = RNTemplate;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -628,7 +628,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser;
 				PRODUCT_NAME = RNTemplate;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -654,7 +654,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate.development;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser.development;
 				PRODUCT_NAME = RNTemplateDevelopment;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -681,7 +681,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate.development;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser.development;
 				PRODUCT_NAME = RNTemplateDevelopment;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -707,7 +707,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser.staging;
 				PRODUCT_NAME = RNTemplateStaging;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -734,7 +734,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rntemplate.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tidalwaveuser.staging;
 				PRODUCT_NAME = RNTemplateStaging;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

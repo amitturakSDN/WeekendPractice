@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "676128183422",
+    "project_id": "tidalwave-3e4e7",
+    "storage_bucket": "tidalwave-3e4e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676128183422:android:ff4e68e540b28e574d742f",
+        "android_client_info": {
+          "package_name": "com.tidalwaveprovider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676128183422-0pgdfnt7uds40qurt5l4hi91fpttc8gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tidalwaveprovider",
+            "certificate_hash": "9e12bd265aa84d70a9dfa6c5e3dc9391df2dc06f"
+          }
+        },
+        {
+          "client_id": "676128183422-b3qse4v2re80ogrdsrv0mn0cd6v5vmpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO7Il7ByyW0mVOMZqsMmRNkylZyU7BWYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676128183422-b3qse4v2re80ogrdsrv0mn0cd6v5vmpo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "676128183422-3cb7j04cp5uphskjr804hai4qpeq58pc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tidalwaveprovider"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676128183422:android:dcc64fcce57026354d742f",
+        "android_client_info": {
+          "package_name": "com.tidalwaveuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676128183422-o1d019l60u40ca66juahueu9d1j4nljp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tidalwaveuser",
+            "certificate_hash": "8f9c2780f3c3fc4d897adefe6aa679b7644171b2"
+          }
+        },
+        {
+          "client_id": "676128183422-b3qse4v2re80ogrdsrv0mn0cd6v5vmpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO7Il7ByyW0mVOMZqsMmRNkylZyU7BWYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676128183422-b3qse4v2re80ogrdsrv0mn0cd6v5vmpo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "676128183422-3cb7j04cp5uphskjr804hai4qpeq58pc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tidalwaveprovider"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

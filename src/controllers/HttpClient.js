@@ -3,7 +3,8 @@ import { Config } from 'react-native-config';
 import { strings } from '@/localization';
 
 const client = axios.create({
-  baseURL: Config.API_BASE_URL,
+  // baseURL: Config.API_BASE_URL,
+  baseURL: 'http://54.190.192.105:6132/api/v1/',
   headers: {
     'Content-Type': 'application/json',
   },

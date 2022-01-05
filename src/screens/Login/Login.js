@@ -19,6 +19,7 @@ export const Login = (props) => {
   let { navigation } = props;
   const dispatch = useDispatch();
   let loginLoader = useSelector((state) => state.loaders.loading);
+  console.log('loginloader<<<<<', loginLoader)
   const fcmToken = useSelector((state) => state.user.fcmToken);
   const fcmToken1 = useSelector((state) => state.user);
 
@@ -35,6 +36,7 @@ export const Login = (props) => {
       Toast.show('Password must be of 8 or more characters.');
     } else {
       fetchToken((response) => {
+   
         dispatch(
           loginUser({
             email: email,
@@ -83,9 +85,9 @@ export const Login = (props) => {
             image={lock}
             secure={true}
           />
-          <TouchableOpacity onPress={() => props.navigation.navigate(NAVIGATION.forgetpassword)}>
+          {/* <TouchableOpacity onPress={() => props.navigation.navigate(NAVIGATION.forgetpassword)}>
             <Text style={styles.forgotpass}>Forget Password?</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <Button
             onPress={() => {
               submitLogin();

@@ -1,0 +1,106 @@
+import { StyleSheet } from 'react-native';
+import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
+import { globalColors, globalFonts } from '@/theme';
+
+export const styles = StyleSheet.create({
+  container: { flex: 1 },
+  headerContainer: {
+    width: '100%',
+    borderBottomLeftRadius: RFValue(30),
+    borderBottomRightRadius: RFValue(30),
+    borderWidth: 0,
+    minHeight: RFValue(80),
+    paddingVertical: RFValue(20),
+    marginBottom: RFValue(10),
+    paddingHorizontal: RFPercentage(3),
+    backgroundColor: globalColors.primaryTheme,
+  },
+  centerStyles: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  serviceItemView: {
+    marginVertical: RFValue(5),
+    width: '100%',
+    padding: RFValue(15),
+    alignSelf: 'center',
+    shadowColor: globalColors.black,
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    elevation: 4,
+    backgroundColor: globalColors.white,
+    borderRadius: RFValue(10),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  serviceName: {
+    color: globalColors.black,
+    fontSize: RFValue(14),
+    fontFamily: globalFonts.semibold,
+  },
+  serviceDesc: {
+    color: globalColors.grey,
+    fontSize: RFValue(14),
+    fontFamily: globalFonts.regular,
+    marginVertical: RFValue(5),
+  },
+  servicePrice: {
+    color: globalColors.primaryTheme,
+    fontSize: RFValue(16),
+    fontFamily: globalFonts.semibold,
+  },
+  checkBox: {
+    height: RFValue(16),
+    width: RFValue(16),
+  },
+  heading: {
+    fontSize: RFValue(16),
+    color: globalColors.black,
+    fontFamily: globalFonts.semibold,
+    marginVertical: RFValue(10),
+  },
+  textInput: {
+    backgroundColor: globalColors.white,
+    borderWidth: 0.5,
+    borderColor: globalColors.grey,
+    borderRadius: 5,
+    color: globalColors.black,
+  },
+  button: {
+    backgroundColor: globalColors.primaryTheme,
+    height: RFValue(40),
+    width: '100%',
+    marginTop: 26,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
+  },
+  buttonText: { fontSize: RFValue(16), color: 'white', fontFamily: globalFonts.medium },
+  dateTime: {
+    height: RFValue(40),
+    borderRadius: RFValue(5),
+    width: '100%',
+    marginVertical: RFValue(10),
+    alignSelf: 'center',
+    flexDirection: 'row',
+  },
+  dateText: {
+    fontSize: RFValue(12),
+    color: globalColors.black,
+    marginLeft: RFValue(5),
+    fontFamily: globalFonts.regular,
+  },
+  headerText: {
+    color: globalColors.white,
+    fontFamily: globalFonts.semibold,
+    fontSize: RFValue(18),
+    alignSelf: 'center',
+  },
+  savedAdd: {
+    fontFamily: globalFonts.medium,
+    fontSize: RFValue(14),
+    textAlign: 'right',
+    color: globalColors.primaryTheme,
+  },
+});

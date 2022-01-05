@@ -11,7 +11,7 @@ export const errorReducer = (state = {}, { payload, type }) => {
     const [, requestName, requestState] = matches;
     return {
       ...state,
-      [requestName]: requestState === 'ERROR' ? payload.error : null,
+      [requestName]: requestState === 'ERROR' ? (payload ? payload.error : null) : null,
     };
   }
 

@@ -1,4 +1,4 @@
-package com.rntemplate;
+package com.tidalwaveuser;
 
 import android.os.Bundle;
 
