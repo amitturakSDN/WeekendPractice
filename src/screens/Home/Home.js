@@ -384,7 +384,7 @@ export function Home(props) {
       {selectedServices.length > 0 ? (
         <TouchableOpacity
           style={[styles.nextButton, styles.centerStyles]}
-          // onPress={() => onNextPress()}
+          onPress={() => onNextPress()}
         >
           <Text style={styles.nextText}>Next({selectedServices.length})</Text>
         </TouchableOpacity>

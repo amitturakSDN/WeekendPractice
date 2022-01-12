@@ -33,8 +33,8 @@ export function AppNavigator() {
           unmountOnBlur: true, // set this props in your tab screen options
         }}
       />
-      {/* <Tab.Screen name={NAVIGATION.schedule} component={ScheduleNavigator} />
-      <Tab.Screen name={NAVIGATION.chat} component={ChatNavigator} /> */}
+      <Tab.Screen name={NAVIGATION.schedule} component={ScheduleNavigator} />
+      {/* <Tab.Screen name={NAVIGATION.chat} component={ChatNavigator} /> */}
       <Tab.Screen name={NAVIGATION.profile} component={ProfileNavigator} />
     </Tab.Navigator>
   );
